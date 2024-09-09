@@ -14,7 +14,7 @@ if (process.argv.length <= 2) {
     process.exit(1)
 }
 
-const size = parseInt(process.argv[2])
+let size = parseInt(process.argv[2])
 
 if (isNaN(size) || size <= 0) {
     process.stderr.write("Invalid size\n");
