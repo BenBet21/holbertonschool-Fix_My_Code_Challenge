@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 /*
     Print a square with the character #
     
@@ -13,7 +13,7 @@ if (process.argv.length <= 2) {
     process.exit(1);
 }
 
-let size = parseInt(process.argv[2]);
+let size = parseInt(process.argv[2], 10);
 
 // Check if size is a valid number and greater than 0
 if (isNaN(size) || size <= 0) {
